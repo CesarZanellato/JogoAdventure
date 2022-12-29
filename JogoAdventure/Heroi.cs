@@ -12,9 +12,6 @@ namespace JogoAdventure
         public int vida { get; set; }
         public int ataque { get; set; }
 
-
     }
-
-
 
 }
