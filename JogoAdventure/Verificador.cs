@@ -14,24 +14,20 @@ namespace JogoAdventure
         Inicio:
             string opcao = Console.ReadLine().ToUpperInvariant().Replace("NÃO", "NAO");
 
-            while (opcao != "SIM" && opcao != "NAO")
+            if (opcao != "SIM" && opcao != "NAO")
             {
                 Console.WriteLine("Erro, digite uma opção válida (SIM ou NAO)");
-                opcao = Console.ReadLine().ToUpperInvariant().Replace("NÃO", "NAO");
+                goto Inicio;
             }
             switch (opcao)
             {
                 case "SIM":
-                    return true;
-                    
+                    return true;                    
 
                 case "NAO":
                     return false;
-
             }
-
             return ValidaOpcao();
-
         }
     }
 }

@@ -13,5 +13,4 @@ namespace JogoAdventure
         public int ataque { get; set; }
 
     }
-
 }
