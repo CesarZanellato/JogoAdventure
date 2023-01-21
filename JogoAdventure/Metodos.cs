@@ -46,7 +46,7 @@ namespace JogoAdventure
 
             Random random = new Random();
 
-            int dado = random.Next(1, 18);
+            int dado = random.Next(1, 6);
 
             Console.WriteLine($"O número gerado foi: {dado}");
 
@@ -62,7 +62,7 @@ namespace JogoAdventure
             foreach (char letra in texto)
             {
                 Console.Write(letra);
-                Thread.Sleep(100);
+                Thread.Sleep(70);
             }
         }
         #endregion
